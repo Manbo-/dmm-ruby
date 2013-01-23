@@ -4,14 +4,14 @@ module DMM
 
   OPERATION_ITEM_LIST = "ItemList"
 
-  SITE_DMM_CO_JP = "DMM.co.jp"
-  SITE_DMM_COM   = "DMM.com"
+  SITE_DMM_CO_JP      = "DMM.co.jp"
+  SITE_DMM_COM        = "DMM.com"
 
-  SORT_RANK        = "rank"
-  SORT_PRICE_DESC  = "+price"
-  SORT_PRICE_ASC   = "-price"
-  SORT_DATE_DESC   = "date"
-  SORT_REVIEW_DESC = "review"
+  SORT_RANK           = "rank"
+  SORT_PRICE_DESC     = "+price"
+  SORT_PRICE_ASC      = "-price"
+  SORT_DATE_DESC      = "date"
+  SORT_REVIEW_DESC    = "review"
 
   # https://affiliate.dmm.com/api/reference/r18/digital/all/
   SERVICE_DIGITAL = "digital"  # DMM.R18 動画
@@ -118,15 +118,19 @@ module DMM
   FLOOR_PCSOFT   = "pcsoft" # DMM.com PCゲーム/ソフトウェア / ソフトウェア
 
   # https://affiliate.dmm.com/api/reference/com/mono/all/
-  #SERVICE_MONO   = "mono"      # DMM.com 通販
-  #FLOOR_DVD      = "dvd"       # DMM.com 通販 / DVD
-  FLOOR_CD        = "cd"        # DMM.com 通販 / CD
-  #FLOOR_BOOK     = "book"      # DMM.com 通販 / 本・コミック
-  FLOOR_GAME      = "game"      # DMM.com 通販 / ゲーム
-  FLOOR_HOBBY     = "hobby"     # DMM.com 通販 / ホビー
-  FLOOR_KADEN     = "kaden"     # DMM.com 通販 / 家電・パソコン
-  FLOOR_HOUSEWARE = "houseware" # DMM.com 通販 / 生活・日用品
-  FLOOR_GOURMET   = "gourmet"   # DMM.com 通販 / 食品・飲料
+  #SERVICE_MONO       = "mono"      # DMM.com 通販
+  #FLOOR_DVD          = "dvd"       # DMM.com 通販 / DVD
+  FLOOR_CD            = "cd"        # DMM.com 通販 / CD
+  #FLOOR_BOOK         = "book"      # DMM.com 通販 / 本・コミック
+  FLOOR_GAME          = "game"      # DMM.com 通販 / ゲーム
+  FLOOR_HOBBY         = "hobby"     # DMM.com 通販 / ホビー
+  FLOOR_KADEN         = "kaden"     # DMM.com 通販 / 家電・パソコン
+  FLOOR_HOUSEWARE     = "houseware" # DMM.com 通販 / 生活・日用品
+  FLOOR_GOURMET       = "gourmet"   # DMM.com 通販 / 食品・飲料
+  #MONO_STOCK_STOCK   = "stock"     # 在庫絞込み / 在庫あり
+  #MONO_STOCK_RESERVE = "reserve"   # 在庫絞込み / 予約受付中
+  #MONO_STOCK_MONO    = "mono"      # 在庫絞込み / DMM通販のみ
+  #MONO_STOCK_DMP     = "dmp"       # 在庫絞込み / マーケットプレイスのみ
 
   # https://affiliate.dmm.com/api/reference/com/rental/all/
   #SERVICE_RENTAL   = "rental"     # DVD/CDレンタル
