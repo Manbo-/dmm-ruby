@@ -44,9 +44,9 @@ module DMM
   FLOOR_KMP        = "kmp"        # DMM.R18 月額動画 / KMP
 
   # https://affiliate.dmm.com/api/reference/r18/ppm/all/
-  SERVICE_PPM    = "ppm"   # DMM.R18 1円動画
-  FLOOR_VIDEO    = "video" # DMM.R18 1円動画 / ビデオ
-  # FLOOR_VIDEOC           # DMM.R18 1円動画 / 素人
+  SERVICE_PPM    = "ppm"    # DMM.R18 1円動画
+  FLOOR_VIDEO    = "video"  # DMM.R18 1円動画 / ビデオ
+  #FLOOR_VIDEOC  = "videoc" # DMM.R18 1円動画 / 素人
 
   # https://affiliate.dmm.com/api/reference/r18/pcgame/
   SERVICE_PCGAME = "pcgame" # DMM.R18 美少女ゲーム
@@ -78,4 +78,69 @@ module DMM
   FLOOR_RENTAL_DVD = "rental_dvd" # DMM.R18 DVDレンタル / 月額レンタル
   FLOOR_PPR_DVD    = "ppr_dvd"    # DMM.R18 DVDレンタル / 単品レンタル
   FLOOR_SET_DVD    = "set_dvd"    # DMM.R18 DVDレンタル / セットレンタル
+
+  # https://affiliate.dmm.com/api/reference/com/lod/
+  SERVICE_LOD = "lod"   # DMM.com AKB48/SKE48
+  FLOOR_AKB48 = "akb48" # DMM.com AKB48/SKE48 / AKB48
+  FLOOR_SKE48 = "ske48" # DMM.com AKB48/SKE48 / SKE48
+
+  # https://affiliate.dmm.com/api/reference/com/digital/all/
+  #SERVICE_DIGITAL = "digital" # DMM.com 動画
+  FLOOR_BANDAI     = "bandai"  # DMM.com 動画 / バンダイch
+  #FLOOR_ANIME     = "anime"   # DMM.com 動画 / アニメ
+  #FLOOR_VIDEO     = "video"   # DMM.com 動画 / バラエティ
+  FLOOR_IDOL       = "idol"    # DMM.com 動画 / アイドル
+  FLOOR_CINEMA     = "cinema"  # DMM.com 動画 / 映画・ドラマ
+  FLOOR_FIGHT      = "fight"   # DMM.com 動画 / 格闘技
+
+  # https://affiliate.dmm.com/api/reference/com/monthly/all/
+  #SERVICE_MONTHLY    = "monthly"       # DMM.com 月額動画
+  FLOOR_TOEI          = "toei"          # DMM.com 月額動画 / 東映
+  FLOOR_ANIMATE       = "animate"       # DMM.com 月額動画 / アニメ
+  FLOOR_SHOCHIKUGEINO = "shochikugeino" # DMM.com 月額動画 / 松竹芸能
+  #FLOOR_IDOL         = "idol"          # DMM.com 月額動画 / アイドル
+  FLOOR_CINEPARA      = "cinepara"      # DMM.com 月額動画 / シネマパラダイス
+  FLOOR_DGC           = "dgc"           # DMM.com 月額動画 / ギャルコレ
+  FLOOR_FLEAGUE       = "fleague"       # DMM.com 月額動画 / Fリーグ
+
+  # https://affiliate.dmm.com/api/reference/com/digital_book/all/
+  SERVICE_DIGITAL_BOOK = "digital_book" # DMM.com 電子書籍
+  FLOOR_COMIC          = "comic"        # DMM.com 電子書籍 / コミック
+  FLOOR_NOVEL          = "novel"        # DMM.com 電子書籍 / 小説
+  FLOOR_MAGAZINE       = "magazine"     # DMM.com 電子書籍 / 雑誌
+  #FLOOR_PHOTO         = "photo"        # DMM.com 電子書籍 / 写真集
+  FLOOR_AUDIO          = "audio"        # DMM.com 電子書籍 / オーディオブック
+  FLOOR_MOVIE          = "movie"        # DMM.com 電子書籍 / 動画
+
+  # https://affiliate.dmm.com/api/reference/com/pcsoft/
+  SERVICE_PCSOFT = "pcsoft" # DMM.com PCゲーム/ソフトウェア
+  #FLOOR_PCGAME  = "pcgame" # DMM.com PCゲーム/ソフトウェア / PCゲーム
+  FLOOR_PCSOFT   = "pcsoft" # DMM.com PCゲーム/ソフトウェア / ソフトウェア
+
+  # https://affiliate.dmm.com/api/reference/com/mono/all/
+  #SERVICE_MONO   = "mono"      # DMM.com 通販
+  #FLOOR_DVD      = "dvd"       # DMM.com 通販 / DVD
+  FLOOR_CD        = "cd"        # DMM.com 通販 / CD
+  #FLOOR_BOOK     = "book"      # DMM.com 通販 / 本・コミック
+  FLOOR_GAME      = "game"      # DMM.com 通販 / ゲーム
+  FLOOR_HOBBY     = "hobby"     # DMM.com 通販 / ホビー
+  FLOOR_KADEN     = "kaden"     # DMM.com 通販 / 家電・パソコン
+  FLOOR_HOUSEWARE = "houseware" # DMM.com 通販 / 生活・日用品
+  FLOOR_GOURMET   = "gourmet"   # DMM.com 通販 / 食品・飲料
+
+  # https://affiliate.dmm.com/api/reference/com/rental/all/
+  #SERVICE_RENTAL   = "rental"     # DVD/CDレンタル
+  #FLOOR_RENTAL_DVD = "rental_dvd" # DVD/CDレンタル / 月額DVDレンタル
+  #FLOOR_PPR_DVD    = "ppr_dvd"    # DVD/CDレンタル / 単品DVDレンタル
+  FLOOR_RENTAL_CD   = "rental_cd"  # DVD/CDレンタル / 月額CDレンタル
+  FLOOR_PPR_CD      = "ppr_cd"     # DVD/CDレンタル / 単品CDレンタル
+  #FLOOR_SET_DVD    = "set_dvd"    # DVD/CDレンタル / セットレンタルDVD
+  FLOOR_SET_CD      = "set_cd"     # DVD/CDレンタル / セットレンタルCD
+  #FLOOR_COMIC      = "comic"      # DVD/CDレンタル / コミック
+
+  # https://affiliate.dmm.com/api/reference/com/iroiro/
+  SERVICE_IROIRO       = "iroiro"         # いろいろレンタル
+  FLOOR_FASHION_LADIES = "fashion_ladies" # いろいろレンタル / レディース
+  FLOOR_FASHION_MENS   = "fashion_mens"   # いろいろレンタル / メンズ
+  FLOOR_RENTAL_IROIRO  = "rental_iroiro"  # いろいろレンタル / いろいろレンタル
 end
