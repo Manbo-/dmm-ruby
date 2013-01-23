@@ -2,6 +2,7 @@
 
 require 'faraday'
 require 'faraday_middleware'
+require 'dmm-ruby/parameters'
 
 module DMM
   API_URL     = 'http://affiliate-api.dmm.com'
@@ -27,10 +28,10 @@ module DMM
       default_params = {
         :api_id       => @api_id,
         :affiliate_id => @affiliate_id,
-        :operation    => 'ItemList',
+        :operation    => OPERATION_ITEM_LIST,
         :version      => API_VERSION,
         :timestamp    => Time.now,
-        :site         => 'DMM.com', # Change this to 'DMM.co.jp' for R18.
+        :site         => SITE_DMM_COM,
       }.update(params)
 
       connection(options).get('/', default_params)
