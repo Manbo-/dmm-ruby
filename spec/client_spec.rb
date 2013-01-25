@@ -6,7 +6,7 @@ describe DMM::Client do
 
     re = Regexp.compile(Regexp.escape(DMM::API_URL))
     stub_request(:any, re).
-      to_return(File.new(File.expand_path(File.dirname(__FILE__) + "/data/dmm_com.xml")))
+      to_return(fixture("dmm_com.xml"))
     @response = client.get({:keyword => "SearchKeyword"})
   end
 
