@@ -2,16 +2,13 @@
 
 module DMM
 
-  OPERATION_ITEM_LIST = "ItemList"
+  OPERATION_ITEM_LIST = 'ItemList'.freeze
 
-  SITE_DMM_CO_JP      = "DMM.co.jp"
-  SITE_DMM_COM        = "DMM.com"
+  SITE_DMM_CO_JP      = 'DMM.co.jp'.freeze
+  SITE_DMM_COM        = 'DMM.com'.freeze
 
-  SORT_RANK           = "rank"
-  SORT_PRICE_DESC     = "+price"
-  SORT_PRICE_ASC      = "-price"
-  SORT_DATE_DESC      = "date"
-  SORT_REVIEW_DESC    = "review"
+  DEFAULT_SITE        = SITE_DMM_CO_JP
+  DEFAULT_SORT        = 'rank'.freeze
 
   # https://affiliate.dmm.com/api/reference/r18/digital/all/
   SERVICE_DIGITAL = "digital"  # DMM.R18 動画
