@@ -34,7 +34,7 @@ module DMM
     end
 
     def items
-      response["result"]["items"]
+      response["result"]["items"]["item"]
     end
 
     private
