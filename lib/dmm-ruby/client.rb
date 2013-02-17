@@ -17,6 +17,7 @@ module DMM
     end
 
     def get(params, options = {})
+      params[:keyword].encode!("euc-jp") if params[:keyword]
       default_params = {
         :api_id       => @api_id,
         :affiliate_id => @affiliate_id,
