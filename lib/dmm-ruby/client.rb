@@ -16,14 +16,6 @@ module DMM
       @site = site
     end
 
-    def connection(options)
-      Faraday.new(API_URL, options) do |faraday|
-        faraday.adapter(Faraday.default_adapter)
-        faraday.request(:url_encoded)
-        faraday.response(:xml, :content_type => /\bxml$/)
-      end
-    end
-
     def get(params, options = {})
       default_params = {
         :api_id       => @api_id,
@@ -43,6 +35,16 @@ module DMM
 
     def items
       response["result"]["items"]
+    end
+
+    private
+
+    def connection(options)
+      Faraday.new(API_URL, options) do |faraday|
+        faraday.adapter(Faraday.default_adapter)
+        faraday.request(:url_encoded)
+        faraday.response(:xml, :content_type => /\bxml$/)
+      end
     end
   end
 end
