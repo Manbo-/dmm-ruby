@@ -8,7 +8,7 @@ module DMM
   API_VERSION = '2.00'
 
   class Client
-    attr_reader :api_id, :affiliate_id
+    attr_reader :api_id, :affiliate_id, :raw
 
     def initialize(api_id, affiliate_id, site = 'DMM.com')
       @api_id = api_id
@@ -34,7 +34,15 @@ module DMM
         :site         => @site, # 'DMM.com' or 'DMM.co.jp'
       }.update(params)
 
-      connection(options).get('/', default_params)
+      @raw = connection(options).get('/', default_params)
+    end
+
+    def response
+      @raw.body["response"]
+    end
+
+    def items
+      response["result"]["items"]
     end
   end
 end
