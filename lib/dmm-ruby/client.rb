@@ -10,9 +10,10 @@ module DMM
   class Client
     attr_reader :api_id, :affiliate_id
 
-    def initialize(api_id, affiliate_id)
+    def initialize(api_id, affiliate_id, site = 'DMM.com')
       @api_id = api_id
       @affiliate_id = affiliate_id
+      @site = site
     end
 
     def connection(options)
@@ -30,7 +31,7 @@ module DMM
         :operation    => 'ItemList',
         :version      => API_VERSION,
         :timestamp    => Time.now,
-        :site         => 'DMM.com', # Change this to 'DMM.co.jp' for R18.
+        :site         => @site, # 'DMM.com' or 'DMM.co.jp'
       }.update(params)
 
       connection(options).get('/', default_params)
