@@ -35,7 +35,12 @@ module DMM
     end
 
     def items
-      response["result"]["items"]["item"]
+      begin
+        items = response["result"]["items"]
+        items["item"].kind_of?(Hash) ? [items["item"]] : items["item"]
+      rescue NoMethodError # undefined method `[]' for nil:NilClass
+        []
+      end
     end
 
     private
